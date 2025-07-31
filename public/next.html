@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+	body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.pinimg.com/736x/0d/f4/eb/0df4eb22625b0dff3be9235756c405c8.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(2px);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .property-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .property-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .property-card:hover {
+            transform: scale(1.05);
+        }
+        .property-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-details {
+            padding: 15px;
+        }
+        .property-details h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .property-details p {
+            margin: 5px 0;
+            color: gray;
+        }
+        .price {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Available Properties</h1>
+        <p>Find the perfect property for you!</p>
+    </header>
+    <div class="container">
+        <!-- Residential Properties -->
+        <h2 class="section-title">Residential Properties</h2>
+        <div class="property-list">
+            <!-- Add Residential Properties -->
+            <div class="property-card">
+                <img src="https://static.toiimg.com/thumb/imgsize-23456,msid-84256567,width-600,resizemode-4/84256567.jpg" alt="Luxury Villa">
+                <div class="property-details">
+                    <h3>Luxury Villa</h3>
+                    <p class="price">₹1,50,00,000</p>
+                    <p>Area: 3,500 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://www.hispace.in/wp-content/uploads/2023/09/kokapet-hyderabad.png" alt="Modern Apartment">
+                <div class="property-details">
+                    <h3>Modern Apartment</h3>
+                    <p class="price">₹85,00,000</p>
+                    <p>Area: 1,200 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1043708927124518980/original/a8405e27-6fa3-41ba-a0bd-c8f78ab8ec9a.jpeg?im_w=720&im_format=avif" alt="Penthouse">
+                <div class="property-details">
+                    <h3>Penthouse</h3>
+                    <p class="price">₹2,50,00,000</p>
+                    <p>Area: 4,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://freight.cargo.site/t/original/i/62b671712d1c92d68b7c40a92b97dee92691ff959b6478f9b5f87d7affc011fa/Lakehouse_0047.jpg" alt="Lakefront House">
+                <div class="property-details">
+                    <h3>Lakefront House</h3>
+                    <p class="price">₹1,75,00,000</p>
+                    <p>Area: 3,200 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://cdn.pixabay.com/photo/2022/08/12/18/34/city-7382274_640.jpg" alt="Townhouse">
+                <div class="property-details">
+                    <h3>Townhouse</h3>
+                    <p class="price">₹95,00,000</p>
+                    <p>Area: 2,100 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty Flats -->
+        <h2 class="section-title">Commercial Flats</h2>
+        <div class="property-list">
+            <!-- Add Empty Flats -->
+            <div class="property-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rZMaDynQvpY2g4XDEWmMCBhmrdUsR9Qi7ViwW0ZyyoO9QTcaxPs8bb9ui27z9jSJIKY&usqp=CAU" alt="Flat in City Center">
+                <div class="property-details">
+                    <h3>Flat in City Center</h3>
+                    <p class="price">₹70,00,000</p>
+                    <p>Area: 1,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4llG4DWkgwfNVLYbNjIF-QEV-7iVdSIY7HT3JJ4CvnWxXz7mAdyqKtdNLAJoqlwj2Fs&usqp=CAU" alt="Flat Near Park">
+                <div class="property-details">
+                    <h3>Flat Near Park</h3>
+                    <p class="price">₹60,00,000</p>
+                    <p>Area: 900 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://thumbs.dreamstime.com/b/traffic-congestion-cities-problem-major-india-photograph-shows-evening-hitec-city-hyderabad-94525021.jpg" alt="Flat in Suburbs">
+                <div class="property-details">
+                    <h3>Flat in Suburbs</h3>
+                    <p class="price">₹50,00,000</p>
+                    <p>Area: 850 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://i.pinimg.com/originals/3c/ff/bd/3cffbd4e943bc5d18a4475df08d4f74b.jpg" alt="Luxury Flat">
+                <div class="property-details">
+                    <h3>Luxury Flat</h3>
+                    <p class="price">₹95,00,000</p>
+                    <p>Area: 1,500 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1117210179713518752/original/b16b278a-33f8-4f08-9d03-3ca8b8e024ca.jpeg?im_w=720&im_format=avif" alt="Rooftop Flat">
+                <div class="property-details">
+                    <h3>Rooftop Flat</h3>
+                    <p class="price">₹1,10,00,000</p>
+                    <p>Area: 1,800 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Land -->
+        <h2 class="section-title">Land</h2>
+        <div class="property-list">
+            <!-- Add Land Listings -->
+            <div class="property-card">
+                <img src="https://imganuncios.mitula.net/residential_plot_in_kundrathur_for_resale_chennai_the_reference_number_is_15898012_4020000732621851853.jpg" alt="Land in Suburbs">
+                <div class="property-details">
+                    <h3>Land in Suburbs</h3>
+                    <p class="price">₹50,00,000</p>
+                    <p>Area: 5,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://bhoomirashi.gov.in/auth/revamp/login/img/carousel-2.jpg" alt="Land Near Highway">
+                <div class="property-details">
+                    <h3>Land Near Highway</h3>
+                    <p class="price">₹80,00,000</p>
+                    <p>Area: 10,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://images.indianexpress.com/2022/03/forest-1.jpeg?w=300" alt="Forest Land">
+                <div class="property-details">
+                    <h3>Forest Land</h3>
+                    <p class="price">₹1,20,00,000</p>
+                    <p>Area: 15,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://i0.wp.com/veditum.org/wp-content/uploads/2022/01/Eastern-Riverfront.jpg?resize=750%2C563&ssl=1" alt="Beachfront Land">
+                <div class="property-details">
+                    <h3>Beachfront Land</h3>
+                    <p class="price">₹2,50,00,000</p>
+                    <p>Area: 20,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://www.yalu.in/media/3187/01HVPHTEX23XG0Y2AMDRJ6DRMH.jpg" alt="Land in City">
+                <div class="property-details">
+                    <h3>Land in City</h3>
+                    <p class="price">₹1,00,00,000</p>
+                    <p>Area: 7,000 sq ft</p>
+                    <a href="property-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
